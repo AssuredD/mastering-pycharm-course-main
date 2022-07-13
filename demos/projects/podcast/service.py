@@ -23,7 +23,7 @@ def download_info():
             item.find('title').text,
             item.find('link').text,
             item.find('pubDate').text,
-            len(items) - idx - 1
+            len(items) - idx + 1
         )
 
         episodes[e.id] = e
